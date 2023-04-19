@@ -1,0 +1,171 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color:rgb(175, 213, 221);
+  color: black;
+  padding: 20px;
+  animation:fadeIn 3s;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.patient-info {
+  width: 40%;
+}
+
+.patient-info h2 {
+  margin-top: 0;
+}
+
+.patient-info form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.patient-info label {
+    font-weight: bold;
+}
+
+.patient-info input,
+.patient-info select,
+.patient-info textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.patient-info button {
+  background-color: rgb(4, 103, 123);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.patient-info button:hover{
+
+background-color: lightblue;
+
+}
+
+.appointment-schedule {
+  width: 55%;
+}
+
+.appointment-schedule h2 {
+  margin-top: 0;
+}
+
+.appointment-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.appointment-schedule table th,
+.appointment-schedule table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.appointment-schedule table th {
+  background-color:rgba(27, 99, 128, 0.821);
+  color: black;
+}
+
+footer {
+  background-color: rgb(175, 213, 221);
+  color: black;
+  padding: 20px;
+animation: fadeIn 2s;
+
+}
+
+footer p {
+  margin: 0;
+}
+
+.ty{
+color: black;
+font-style: bold;
+font-family: monospace; 
+text-align: center;
+margin-left: 100px;
+margin-right: 100px;
+border-color: #333;
+border-width: 10px;
+background-color: rgb(32, 171, 199);
+border-radius: 20px;
+}
+.b1{
+  width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid #555;
+	border-bottom: 25px solid transparent;
+}
+
+
+
+  .b1:hover{
+border-color: blueviolet;
+background-image: #333;
+  }
+
+.fa-arrow-left{
+ margin-left: 20% ;
+  font-size: xx-large;
+    color: black;
+    position:absolute;
+}
+
+.fa-arrow-left:hover{
+color: #8d0d0d;
+animation: fadeIn;
+animation-play-state:running;
+animation-iteration-count: 1;
+animation-delay: 3s;
+
+
+}
+.fa-arrow-left:active{
+color: aqua;
+
+}
+.fa-arrow-left:visited{
+color: yellow;
+
+}
+.fa-check{
+  margin-left: 67% ;
+  font-size: xx-large;
+    color: green;
+    position:absolute;
+    animation: fadein 2s;
+}
+.fa-check:hover {
+
+color: lightgreen;
+
+}
+ 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

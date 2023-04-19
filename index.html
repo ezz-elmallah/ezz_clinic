@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ezz Clinic</title>
+	
+	<style>
+		body {
+			background-color: rgb(175, 213, 221);
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		.header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px 0;
+		}
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+			color: #3b3b3b;
+		}
+		.navigation {
+			display: flex;
+			align-items:flex-end;
+			
+			
+		}
+		.navigation a {
+			color: #3b3b3b;
+			text-decoration: none;
+			font-weight: bold;
+			margin-left: 20px;
+			padding: 10px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease-in-out;
+		}
+		.navigation a:hover {
+			background-color: #3b3b3b;
+			color: #f2f2f2;
+		}
+		.hero {
+			background-image: url(data:image/jpeg;base64,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);
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+			margin-top: 50px;
+			animation: fadein 3s;
+		}
+		.hero h1 {
+			color: #3b3b3b;
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
+		.hero p {
+			color: #3b3b3b;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		.button-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+		}
+		.button-container a {
+			background-color: #3b3b3b;
+			color: #f2f2f2;
+			padding: 10px 30px;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			margin-right: 20px;
+			transition: background-color 0.3s ease-in-out;
+		}
+		.button-container a:hover {
+			background-color: #f2f2f2;
+			color: #3b3b3b;
+		}
+		#about {
+			background-color: #fff;
+			padding: 50px;
+			margin-top: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+		}
+		#about h2 {
+			color: #3b3b3b;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		#about p {
+			color:  3b3b;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		#about {
+	animation: fadein 3s;
+			background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDw0NDQ0NDQ0NDQ0NDQ0NDQ8IDQgNFREWFhURExMYHSggGBolGxMTITEhMSkrLjo6Fx8zODMsNygtLisBCgoKDg0OFQ8PFSsZFRkrKysrLSsrKzcrKysrLS0tKy0tLTcrLSsrKzcrKy03LSs3NzctLS0rLSsrKysrLSsrK//AABEIAL0BCgMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAQIDBAUGB//EACcQAQEBAAICAgIBAwUAAAAAAAABAgMRBCEFEjFBUQYUcRMiYYGR/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAHBEBAQEBAQADAQAAAAAAAAAAAAECEQMSITFB/9oADAMBAAIRAxEAPwD9kiihtuQAPoUugrodAzKxpYmwTiAch/UEhpMHcHTjFUqphUwHEdldK1llqKlF2m8jLdrO2tcZ66c7X25sdt8pYsp0ujADoqZAQPodCEJFdCQBIoQ+kaEioIaKIDkAqcqTFCA4lpkU5AcPpGkWF0sBxn9SsaJ1BLDyWiydBMXEKyIWmO430z1FiVy7jK9Rty3p5fm+VMe7XSMPQnJG2OSPjub+ocZvV1P/AF1eJ89jfX+6J2LyvqO4Lp53jebNddV075O4cD3zdM/7mfy4fK5b7efN8mr6rGtyN587p9Hjm7bZvbyfC+34r0ePtZZZ1NZua3EMCBRKiKcOCHBRIfQgQZZM4VVDy1jPDSDUVAAigdAAVidVdRoKiaVdIoVk/sc0g5AXdI1oVnuha5fJ3+XyX9R+RZnX/b6nyvxXx39QZuu5/K738Mr5+d3ePz3zOXd1dXvrv1/w18LzNYssr1vI+Mln4cvH8b08c9JXuvjz6fX/AAPyF3J7fT8fN3Hxf9P+LrP+O32HBx3p6sXseLefjrifJHh5n8K5sn43q9OHp+vT4z6ejw8br+jLhdDr5/jn7c6mAB0eY1RC4KqKTFMqcAgFZdgoFZVhrGWI2kGoYARQAAFRqLAMfqcw2B04y+guWpJ04xuGW8V12M9RZUsebz4fNfLeN77fW8+Hj+fxSys+uflHTx38dPlbwdq4fj5q/h154L9uuv29fw/E6eLHnbePpb9JM9Y+B4Ez+nr44uovi4emmo+jjPJx8n0129cHkyRlw6nbXzM3qvD15Vzv6uXtl38NPrvEnc7dX0cfxt7xn/EenjLf5HPV+Vrks6Dr1x9sd8S9c7mslZT0rKouKTFRlThlANMj6ORUislmNImRURqGAAAAAADsoAXY7QFolT2cUXBYDiKw5cdx5vPwdvY1HPycbUrNjxv7Kd9uvi45l1XiTrHSzhdVBXPZxeYrLi5+N43k/H/bc1P1X0/Jxdxzf27U1P6n3D+MlnUevHJ4vD07HLd7XTH4CsMMtObmx17ZR18k7jkvqtxz1OLioiVUBcBQIoVEqgQzIxQAAAAAEdIEladiKJTlaRj2vNCVpaM1FEOL1etMtbG65t2rIl0657ZcsTjZb2vE79Me/bbDm79t+PS1mN5DmBn8HnTLca4nS0Z0thsArU/YFVycv5dbm8hrLOvxnKuMovNarDSGiDtFWcIRFWcTDgpgAAAAAsAAk6XU0GNEXqJVk+x9k0AetMNxpYmrErPtz8/kyemvNPV6ebycdtTVs/HTEn9dnFv7e3Riubgz1HRlv+Ma511TXpj/AKvsa16cu77SRm16PFydumV5/jad2GNRvNPTH7e2vI5rfZFtdcrHnjTGvTLmqT9L+OaLlZ9qjo5RpDRKfbLTYQBFVDhQ4NGAAAAAACgRWmmgRWGBE2EsrFEJqqmiMtxzax7dO6yrcZ6WZ0pI7Vlf2YckVdubm8iT9kHb4+3o8Wng+Lz/AG/D1/H0zuN5rp5HHv8ALsrm5MsRrTXjvpHNVYnplzVUt+mC5UQ5Wq5tJT7TAjTpADLZ5UnKoKYAAAAAKBQJCkhQABAVMqCajS6jSpWHJWX2Hka6cX+v7dJGHZrbn5fIkZ75O44+fGtM67/G8yH5Hnyft5Hk/JfbX1lHncWp24fjvB1rk+19+2ZdN6zmR9Z8NxW57e7wxx/HcX1zP8O7Matc5G+Ubh5GmG0dsOWtq5+StRjSTINMKgIIrsADDoeVQsnBTAFADsgB9laAARVpoEABAmnU0E1NVUVplx+VHm6ze3rc2XFyZjrlis+ON84n8IxG0q0lcXleLNfpfheDM/p2SStuOMVrrfhz1GqcKc2lZVU4XRphyXpz2tOfTBqOWqo0dn2qKNJnB2iJ7VHN1VFRMPsUypkBF2dIB2fZADIEAAAhVNWnSjPSarSNKyy5XFyR17cvI6ZZqMVUqYrLTLXLowww2yxWo6c1bPC+3OtnKN7Rqs+TSyFrLl0zlLVKVtyaDtHZ9gvsdp+w7Fd64iKjm6KiknEaMAAmg6kDAAEAAoAEAJ0pGlSo0y1Wlrn5K1GaNRycrq1fTh5b7byzTXlnGmWqy1w2yxw1jFajoxVdss0XVYbi9ufemur6ctv5ayzU2lKVJthfZ9oHaDTsdo7PsH//2Q==);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+
+	
+	
+	max-width: 100%;
+			margin-bottom: 30px;
+			
+		}
+		.reservation {
+			background-color: #f2f2f2;
+			padding: 50px;
+			margin-top: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+		}
+		.reservation h2 {
+			color: #3b3b3b;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.reservation p {
+			color: #3b3b3b;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		.medical-report {
+			background-color: #fff;
+			padding: 50px;
+			margin-top: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-align: center;
+		}
+		.medical-report h2 {
+			color: #3b3b3b;
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		.medical-report p {
+			color: #3b3b3b;
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+		.footer {
+			background-color: #3b3b3b;
+			color: #f2f2f2;
+			padding: 20px;
+			text-align: center;
+			margin-top: 50px;
+		}
+		.footer p {
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+		}
+		@keyframes fadein {
+			
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="logo">Ezz Clinic</div>
+			<nav class="navigation">
+				<a href="#about">About Us</a>
+				<a href="medical-report.html">Medical Report</a>
+				<a href="main.html">Reservation</a>
+			</nav>
+		</header>
+		<section class="hero">
+			<h1>Welcome to Ezz Clinic</h1>
+			<p>Our mission is to provide the highest quality healthcare services to our patients.</p>
+			<div class="button-container">
+				<a href="medical-report.html" class="button">Medical Report</a>
+				<a href="main.html" class="button">Reservation</a>
+				<a href="#about" class="button">About Us</a>
+			</div>
+		</section>
+		<section id="about">
+			<h2>About Us</h2>
+			
+			<p>Welcome to our clinic! We are dedicated to providing the highest quality healthcare services to our patients. </p>
+				</p>
+ 
