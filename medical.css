@@ -152,16 +152,16 @@ color: aqua;
 color: yellow;
 
 }
-.fa-check{
+.fa-house{
   margin-left: 67% ;
   font-size: xx-large;
-    color: green;
+    color: rgb(5, 5, 60);
     position:absolute;
     animation: fadein 2s;
 }
-.fa-check:hover {
+.fa-house:hover {
 
-color: lightgreen;
+color: rgb(96, 95, 156);
 
 }
  
